@@ -32,7 +32,7 @@ export default function Index() {
         ): (
           <View className="flex-1 mt-5">
             <SearchBar onPress={() => router.push("/search")} placeholder="Search for a movie" />
-            <>
+            <View>
               <Text className="text-lg text-white font-bold mt-5 mb-3">Lastest Movies</Text>
               <FlatList 
                   data={movie} 
@@ -52,7 +52,7 @@ export default function Index() {
                   className="mt-2 pd-32"
                   scrollEnabled={false}
               />
-            </>
+            </View>
           </View>
         )}       
       </ScrollView>
